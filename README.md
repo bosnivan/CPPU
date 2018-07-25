@@ -2,10 +2,10 @@
   <img width="200" height="100" src="https://github.com/bosnivan/CPPU/blob/master/Logo.png">
 </p>
 
--	Simulacija jednostavnog 32-bitnog procesora
+-	Asemblerski jezik, simulacija jednostavnog 32-bitnog procesora
 -	Arhitektura je slična procesoru micro:bita
 -	16 registara, 1kB memorije
--	17 naredbi, labele, komentari
+-	17 naredbi, labele i komentari
 - Izravno podržane osnovne funkcije micro:bita; rad s pinovima i ekranom micro:bita
 - Jednostavno se proširi ili prilagodi željama korisnika
 - Pogodno za upoznavanje s osnovama rada procesora i asemblerskog programiranja
@@ -173,4 +173,4 @@ halt
 
 
 ## Što i kako?
-Datoteka [CPPU.py](https://github.com/bosnivan/CPPU/blob/master/CPPU.py) sadrži izvršni program simulatora. Napisan je u MicroPythonu za micro:bit i najbolje ga je koristiti razvojnom okruženju [Mu](https://codewith.mu/). Kopirate ga u uređivač i na označeno mjesto unesete kod programa. Ako ćete pisati složenije programe, zbog memorijskog ograničenja MicroPythona, možda će micro:bit javiti grešku manjka memorije. Tada je najbolje izbaciti dijelove simulatora koji nisu korišteni. Za drugi primjer sam to napravio u datoteci [Primjer.py](https://github.com/bosnivan/CPPU/blob/master/Primjer.py). Budući da takva dorada simulatora nije za svakoga, radim na izradi uređivača koji će prihvaćati samo kod programa i sve ostalo raditi u pozadini. Ako se pokaže zanimanje, složit ću i lekcije za upoznavanje rada procesora i asemblersko programiranje.
+Datoteka [CPPU.py](https://github.com/bosnivan/CPPU/blob/master/CPPU.py) sadrži izvršni kod simulatora. Napisan je u MicroPythonu za micro:bit i najbolje je koristiti ga razvojnom okruženju [Mu](https://codewith.mu/). Otvorite datoteku i na označeno mjesto unesete asemblerski kod programa. Ako ćete pisati složenije programe, zbog memorijskog ograničenja MicroPythona, možda će micro:bit javiti grešku manjka memorije. Tada je najbolje izbaciti dijelove simulatora koji u programu nisu korišteni. Za drugi sam primjer to napravio u datoteci [Primjer.py](https://github.com/bosnivan/CPPU/blob/master/Primjer.py). Budući da takva dorada simulatora nije za svakoga, prilagođavam Mu da izravno podrži ovaj simulator. Ako se pokaže zanimanje, složit ću i lekcije za upoznavanje rada procesora i asemblersko programiranje.
