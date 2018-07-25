@@ -3,10 +3,12 @@
 </p>
 
 -	Simulacija jednostavnog 32-bitnog procesora
--	Arhitektura je slična arhitekturi procesora u micro:bitu
+-	Arhitektura je slična procesoru micro:bita
 -	16 registara, 1kB memorije
--	17 naredbi, podržavaju osnovne funkcije micro:bita; rad s pinovima i ekranom micro:bita
-- Pogodna za upoznavanje s osnovama rada procesora i asemblerskog programiranja
+-	17 naredbi, labele, komentari
+- Izravno podržane osnovne funkcije micro:bita; rad s pinovima i ekranom micro:bita
+- Jednostavno se proširi ili prilagodi željama korisnika
+- Pogodno za upoznavanje s osnovama rada procesora i asemblerskog programiranja
 
 
 ## Naredbe
@@ -119,7 +121,7 @@ halt  # program uspješno prekida s izvođenjem
 ```
 
 ## Primjeri programa
-### Množenje brojeva tri i četiri
+### Množenje brojeva tri i četiri te spremanje rezultata u memoriju
 ```
 mov r0 3
 mov r1 4
@@ -132,7 +134,7 @@ l1: str a0 r3
 halt
 ```
 
-### Množenje brojeva koje korisnik unese i ispis rezultata na micro:bitu
+### Množenje unešenih brojeva i ispis rezultata na micro:bitu
 ```
 mov r0 1
 l1: btn r1 bA
